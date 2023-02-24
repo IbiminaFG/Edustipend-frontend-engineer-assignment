@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 50px 60px;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-links {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  border-radius: 4px;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.link:hover {
+  background-color: transparent;
+  color: blueviolet;
+}
+
+.sign-out {
+  background-color: transparent;
+  border: none;
+  color: blueviolet;
+}
+
+.sign-out:hover {
+  background-color: blueviolet;
+  border-radius: 4px;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.section-one {
+  display: flex;
+  width: 100vw;
+  padding: 40px 40px;
+  align-content: center;
+}
+
+.container {
+  width: 45%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.message {
+  text-align: left;
+}
+
+p {
+  width: 100%;
+}
+
+.design {
+  width: 50%;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 30px 20px;
+}
+
+.section-two h2 {
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.org-views {
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px;
+  margin-bottom: 40px;
+}
+
+.org-view {
+  text-align: center;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  border-radius: 20px 0 0 0;
+  color: white;
 }
