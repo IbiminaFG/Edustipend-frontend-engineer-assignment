@@ -1,14 +1,10 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div style={{ padding: "20px", backgroundColor: "gray", height: "100vh" }}>
+      <Navigation />
+    </div>
   );
 };
 
